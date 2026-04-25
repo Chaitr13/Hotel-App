@@ -1,1 +1,10 @@
-<p>reservation-list works!</p>
+<h2>Reservation List</h2>
+<ul *ngFor="let reservation of reservations">
+  <li>
+    Guest Name: {{ reservation.guestName }} <br />
+    Guest Email: {{ reservation.guestEmail }} <br />
+    Room Number: {{ reservation.roomNumber }} <br />
+    Chaeck-In: {{ reservation.checkInDate }} <br />
+    Check-Out: {{ reservation.checkInDate }} <br />
+  </li>
+</ul>
